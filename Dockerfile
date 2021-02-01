@@ -1,17 +1,15 @@
-FROM node: latest
+FROM node:latest
 
-MAINTAINER Ghaffour mina 
+MAINTAINER Ghaffour mina
 
-RUN echo "Tryin to build my first application"
+RUN echo "Tryin to build my front application"
 
-COPY  . /app
+COPY . /var/www
 
-WORKDIR  /app
+WORKDIR /var/www
 
 RUN npm install
 
 EXPOSE 3000
-
-CMD npm start
 
 ENTRYPOINT ["npm","start"]
