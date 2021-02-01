@@ -15,4 +15,4 @@ RUN npm run build
 FROM nginx:1.19.0-alpine AS prod-stage
 COPY --from=build /var/www/build /usr/share/nginx/html
 EXPOSE 80
-CMD ["nginx","-g","daemond off;"]
+CMD ["nginx","-g","daemon off;"]
