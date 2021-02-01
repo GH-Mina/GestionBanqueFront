@@ -1,15 +1,13 @@
-FROM node:latest
+FROM node:latest as build-step
 
-MAINTAINER Ghaffour mina 
+RUN mkdir /app
 
-RUN echo "Tryin to build my first application"
+WORKDIR /app
 
-COPY . /var/www
-
-WORKDIR /var/www
+COPY package.json /app
 
 RUN npm install
 
-EXPOSE 3000
+COPY . /app
 
-ENTRYPOINT ["npm","start"]
+RUN npm run build
