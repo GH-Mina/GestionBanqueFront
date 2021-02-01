@@ -1,4 +1,4 @@
-FROM node: 9.0.0
+FROM node: latest
 
 MAINTAINER Ghaffour mina 
 
