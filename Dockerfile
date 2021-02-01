@@ -1,12 +1,12 @@
-FROM node:10
+FROM node: 9.0.0
 
 MAINTAINER Ghaffour mina 
 
 RUN echo "Tryin to build my first application"
 
-COPY . /temp
+COPY  . /var/www
 
-WORKDIR /temp
+WORKDIR  /var/www
 
 RUN npm install
 
