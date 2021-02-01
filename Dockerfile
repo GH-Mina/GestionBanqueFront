@@ -1,4 +1,6 @@
-FROM node: latest as build step
+FROM node: latest as build-step
+
+RUN mkdir /app
 
 WORKDIR /app
 
