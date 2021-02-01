@@ -1,4 +1,4 @@
-FROM node:latest as build-step
+FROM node: 9.1.0 as build-step
 
 RUN mkdir /app
 
