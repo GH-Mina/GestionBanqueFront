@@ -4,9 +4,9 @@ MAINTAINER Ghaffour mina
 
 RUN echo "Tryin to build my first application"
 
-COPY . /var/www
+COPY . /temp
 
-WORKDIR /var/www
+WORKDIR /temp
 
 RUN npm install
 
