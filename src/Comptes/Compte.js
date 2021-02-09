@@ -158,7 +158,7 @@ class Compte extends Component {
             </Grid>
             <fieldset>
                 <legend align="top">Liste des Comptes</legend>
-                <CompteSummary Comptes={this.state.Comptes} /*handleErrors={this.handleErrors}*/ />
+                <CompteSummary Comptes={this.state.Comptes}/>
             </fieldset>
         </div>
     );
