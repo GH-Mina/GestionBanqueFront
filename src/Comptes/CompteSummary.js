@@ -67,7 +67,7 @@ export default function CompteSummary({ Comptes}) {
                             <StyledTableCell>Code</StyledTableCell>
                             <StyledTableCell>Date de Création</StyledTableCell>
                             <StyledTableCell>Solde</StyledTableCell>
-                            <StyledTableCell>Client</StyledTableCell>
+                            <StyledTableCell>Decouvert</StyledTableCell>
                             <StyledTableCell>Employe</StyledTableCell>
                         </TableRow>
                     </TableHead>
@@ -78,8 +78,8 @@ export default function CompteSummary({ Comptes}) {
                                     <StyledTableCell>{row.codeCompte}</StyledTableCell>
                                     <StyledTableCell>{row.dateCreation}</StyledTableCell>
                                     <StyledTableCell>{row.solde}</StyledTableCell>
-                                    <StyledTableCell>{""}</StyledTableCell>
-                                    <StyledTableCell>{""}</StyledTableCell>
+                                    <StyledTableCell>{row.decouvert}</StyledTableCell>
+                                    <StyledTableCell>{"Employé1"}</StyledTableCell>
                                 </StyledTableRow>
                             )
                         })}
