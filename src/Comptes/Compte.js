@@ -158,7 +158,7 @@ class Compte extends Component {
             </Grid>
             <fieldset>
                 <legend align="top">Liste des Comptes</legend>
-                <CompteSummary Comptes={this.state.Comptes}/>
+                <CompteSummary Comptes={this.dynamicSearch()}/>
             </fieldset>
         </div>
     );
