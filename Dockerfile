@@ -2,7 +2,7 @@ FROM node:latest AS build
 
 MAINTAINER Ghaffour mina
 
-RUN echo "Tryin to build my front application"
+RUN echo "Trying to build my front application"
 
 COPY . /var/www
 
