@@ -26,7 +26,7 @@ class Compte extends Component {
     }
     
     componentDidMount() {
-        fetch("http://localhost:8080/comptes")
+        fetch("http://localhost:80/comptes")
             .then(res => res.json()
             )
             .then(data => {
