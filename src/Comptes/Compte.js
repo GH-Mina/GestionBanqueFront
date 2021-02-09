@@ -26,7 +26,7 @@ class Compte extends Component {
     }
     
     componentDidMount() {
-        fetch("http://localhost:80/comptes")
+        fetch("http://ec2-3-86-149-107.compute-1.amazonaws.com:80/comptes")
             .then(res => res.json()
             )
             .then(data => {
@@ -72,7 +72,7 @@ class Compte extends Component {
     onSubmit = (e) => {
         e.preventDefault();
         let newCompte = { ...this.state.Compte };
-        fetch("http://localhost:80/comptes/add", {
+        fetch("http://ec2-3-86-149-107.compute-1.amazonaws.com:80/comptes/add", {
             method: "POST",
             body: JSON.stringify(newCompte)
         }).then(res => {
