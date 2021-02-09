@@ -14,7 +14,7 @@ import { useEffect, useState, useRef } from "react";
 const StyledTableCell = withStyles((theme: Theme) =>
     createStyles({
         head: {
-            backgroundColor: "blue",
+            backgroundColor: "green",
             color: theme.palette.common.white,
         },
         body: {
