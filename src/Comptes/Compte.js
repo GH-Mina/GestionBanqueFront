@@ -72,7 +72,7 @@ class Compte extends Component {
     onSubmit = (e) => {
         e.preventDefault();
         let newCompte = { ...this.state.Compte };
-        fetch("http://localhost:8080/comptes/add", {
+        fetch("http://localhost:80/comptes/add", {
             method: "POST",
             body: JSON.stringify(newCompte)
         }).then(res => {
