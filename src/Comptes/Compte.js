@@ -106,7 +106,7 @@ class Compte extends Component {
         let codeSearch = this.state.CompteRecherche.codeCompte;
         if (codeSearch.length > 0) {
             let Comptes = this.state.Comptes.filter((Compte) =>
-                Compte.codeCreation.toLowerCase().startsWith(codeSearch.toLowerCase())
+                Compte.codeCompte.toLowerCase().startsWith(codeSearch.toLowerCase())
             )
 
             return (Comptes.length !== 0) ? Comptes : aucunCompte
